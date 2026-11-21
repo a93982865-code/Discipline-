@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DISCIPLINE</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800;900&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#000;--ink:#f4efe4;--mut:#8d887d;--card:#141312;--line:#2a2826;--paper:#f3ead9;--paper2:#e9dfca;--pt:#1a1612;--red:#c0392b;--gold:#e8b44a;--ok:#5cc98a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:inherit;-webkit-tap-highlight-color:transparent}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Vazirmatn,Tahoma,system-ui,sans-serif;min-height:100vh}
+#app{max-width:520px;margin:0 auto;padding:18px 16px 60px}
+h1,h2,h3,p{margin:0}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.top h1{font-weight:900;font-size:26px;letter-spacing:4px}
+.top small{color:var(--mut);font-size:13px}
+.hero{background:linear-gradient(160deg,#1c1a17,#0d0c0b);border:1px solid var(--line);border-radius:26px;padding:22px 18px;text-align:center;position:relative;overflow:hidden}
+.hero .em{font-size:84px;line-height:1.1;filter:drop-shadow(0 8px 18px rgba(232,180,74,.25))}
+.hero .nm{font-size:34px;font-weight:900;margin-top:4px}
+.hero .rk{color:var(--mut);font-size:13px;margin-top:2px}
+.bar{height:12px;border-radius:8px;background:#26231f;margin:16px 0 8px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold),#ff8a3d);border-radius:8px;transition:width .6s}
+.xpl{display:flex;justify-content:space-between;font-size:13px;color:var(--mut)}
+.btn{display:block;width:100%;border:0;border-radius:18px;padding:16px;font:800 17px Vazirmatn,Tahoma,sans-serif;background:#fff;color:#000;cursor:pointer;margin-top:14px}
+.btn.g{background:#1d1b19;color:var(--ink);border:1px solid var(--line)}
+.warn{background:#2a1512;border:1px solid #6a2a22;color:#ffb3a8;border-radius:16px;padding:12px 14px;margin-top:14px;font-size:14px;line-height:1.7}
+h2{font-size:19px;font-weight:800;margin:24px 2px 10px}
+.t{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px;margin-bottom:10px;cursor:pointer;transition:.2s;user-select:none}
+.t .ic{font-size:30px;width:44px;text-align:center}
+.t .tx{flex:1}.t b{display:block;font-size:17px}
+.t span{font-size:12.5px;color:var(--mut)}
+.t .ck{width:30px;height:30px;border-radius:50%;border:2px solid #4a463f;display:grid;place-items:center;font-size:16px;color:transparent;transition:.2s}
+.t.on{border-color:#2f6a4a;background:#10201a}.t.on .ck{background:var(--ok);border-color:var(--ok);color:#00170a}
+.t.hard:not(.on){border-color:#6a2a22}
+.t.hard span{color:#ff8f80}
+.pl{background:var(--card);border:1px solid #6a2a22;border-radius:18px;padding:6px 14px 14px;margin-bottom:10px}.pl h3{margin:12px 0 4px;font-size:16px;color:var(--gold)}.ex{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14.5px}.ex:last-child{border:0}.ex b{color:#fff;font-weight:800;white-space:nowrap}.pn{color:#ff8f80;font-size:13px;line-height:1.8;margin-top:8px}
+.rest{background:var(--card);border:1px dashed var(--line);border-radius:18px;padding:16px;color:var(--mut);text-align:center;line-height:1.8}
+.bonus{text-align:center;color:var(--gold);font-size:14px;margin-top:4px}
+.ov{position:fixed;inset:0;background:#000;z-index:50;display:none;flex-direction:column;padding:calc(env(safe-area-inset-top,0px) + 14px) 16px calc(env(safe-area-inset-bottom,0px) + 16px);overflow:hidden}
+.ov.show{display:flex}
+.ph{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.bk{width:48px;height:48px;border-radius:50%;background:#262626;border:0;color:#fff;font-size:22px;cursor:pointer;flex:none}
+.pg{flex:1;height:6px;border-radius:4px;background:#2a2a2a;overflow:hidden}.pg i{display:block;height:100%;background:#fff;width:50%;transition:width .3s}
+.cert{flex:1;min-height:0;background:linear-gradient(#f5ecdc,var(--paper2));border-radius:20px;padding:14px;color:var(--pt);overflow:auto;position:relative}
+.cert .in{border:1.5px solid #7d7466;border-radius:14px;min-height:100%;padding:20px 18px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.av{width:58px;height:58px;border-radius:50%;background:#1a1612;display:grid;place-items:center;font-size:30px}
+.hr{width:100%;height:1px;background:#a89e8d;margin:16px 0}
+.ct{font-weight:900;font-size:17px;letter-spacing:1px}
+.sub{font-style:italic;color:#6a6258;font-size:14px;margin-top:8px;line-height:1.7}
+.stamp{border:3px solid var(--red);color:var(--red);font-weight:900;padding:4px 14px;border-radius:10px;transform:rotate(-8deg);margin:14px 0 0;font-size:14px;opacity:.85}
+.big{font-size:118px;line-height:1.1;margin-top:10px}
+.cn{font-size:46px;font-weight:900;color:#000;line-height:1.1}
+.cr{font-size:13px;color:#7a7164;margin-top:6px;font-weight:600}
+.q{font-size:20px;font-weight:800;color:#000;line-height:1.8;margin-top:18px}
+.ft{margin-top:auto;padding-top:16px;width:100%;display:flex;justify-content:space-between;font-size:13px;font-weight:700;color:#6a6258;border-top:1px solid #a89e8d}
+.dots{display:flex;gap:8px;justify-content:center;margin:12px 0 0}.dots i{width:10px;height:10px;border-radius:5px;border:1.5px solid #777}.dots i.a{width:44px;background:#fff;border-color:#fff}
+.ov .btn{flex:none}
+.rules{text-align:right;width:100%;font-size:14.5px;line-height:1.9}
+.rules h3{font-size:16px;margin:12px 0 4px}
+.rules li{margin-bottom:2px}
+.lad{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;width:100%;margin-top:10px}
+.lr{display:flex;align-items:center;gap:8px;background:#ded3bc;border-radius:12px;padding:8px 10px;text-align:right;font-size:13px}
+.lr em{font-style:normal;font-size:26px}.lr b{display:block;color:#000}.lr.cur{outline:3px solid var(--red)}.lr.lock{opacity:.45;filter:grayscale(1)}
+.fl{position:absolute;top:-60px;z-index:60;pointer-events:none;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(115vh) rotate(540deg)}}
+@media(prefers-reduced-motion:reduce){.fl{display:none}.bar i,.t{transition:none}}
+</style>
+</head>
+<body>
+<div id="app">
+ <div class="top"><div><h1 dir="ltr">DISCIPLINE</h1><small id="dt"></small></div><div style="font-size:30px" id="mini"></div></div>
+ <div class="hero">
+  <div class="em" id="em"></div><div class="nm" id="nm"></div><div class="rk" id="rk"></div>
+  <div class="bar"><i id="bf"></i></div>
+  <div class="xpl"><span id="xa"></span><span id="xb"></span></div>
+  <button class="btn" id="open">گواهی رتبه من</button>
+ </div>
+ <div id="warn"></div>
+ <h2>کارهای امروز</h2>
+ <div id="tasks"></div>
+ <div class="bonus" id="bonus"></div>
+ <button class="btn g" id="open2">چطور بالا برم؟</button>
+</div>
+
+<div class="ov" id="ov">
+ <div class="ph"><button class="bk" id="bk" aria-label="بازگشت">›</button><div class="pg"><i id="pgb"></i></div></div>
+ <div class="cert"><div class="in" id="cin"></div></div>
+ <div class="dots"><i id="d1"></i><i id="d2"></i></div>
+ <button class="btn" id="nx"></button>
+</div>
+
+<script>
+const R=[
+["🐑","گوسفند","Sheep","مثل بقیه‌ای. صعود از لحظه‌ای شروع می‌شه که تصمیم بگیری."],
+["🐀","موش","Rat","فرار نکن. فقط وقتی کسی نگاه نمی‌کنه کار می‌کنی؟ هنوز زوده."],
+["🐔","مرغ","Chicken","سر و صدا زیاد، نتیجه کم. بس کن، فقط انجامش بده."],
+["🐢","لاک‌پشت","Turtle","آهسته، ولی دیگه ایستاده نیستی. ادامه بده."],
+["🐕","سگ","Dog","وفاداری یعنی هر روز، نه هر وقت حس داشتی."],
+["🐈","گربه","Cat","بدنت داره بیدار می‌شه. غرورت هنوز نه."],
+["🐎","اسب","Horse","قدرت داری. حالا به لگام نظم بده."],
+["🦊","روباه","Fox","زرنگی بدون تمرین، فقط یه بهانه‌ی قشنگه."],
+["🐗","گراز","Boar","وقتی سخت می‌شه، مستقیم می‌ری جلو."],
+["🐍","مار","Snake","آروم، دقیق، بی‌رحم با تنبلی."],
+["🦅","عقاب","Eagle","از بالا که ببینی، فاصله‌ت با اول راه رو می‌فهمی."],
+["🐺","گرگ","Wolf","تنها شکار می‌کنی و هر روز سر وقت. اینجا کم‌کسی می‌رسه."],
+["🐆","یوز","Leopard","سرعت بدون ثبات برنده نمی‌شه."],
+["🐻","خرس","Bear","قدرتت واقعیه. زمستونِ تنبلی رو پشت سر گذاشتی."],
+["🦍","گوریل","Gorilla","بدنت حرف می‌زنه. دیگه لازم نیست توضیح بدی."],
+["🐅","ببر","Tiger","ترس بقیه از تویه که هر روز می‌آی."],
+["🦏","کرگدن","Rhino","هیچ بهانه‌ای جلوت نمی‌ایسته."],
+["🦁","شیر","Lion","تاج رو نمی‌گیرن، هر روز می‌سازنش."],
+["🐉","اژدها","Dragon","افسانه شدی. فقط یه قدم مونده."],
+["👑","پادشاه","King","این‌جا کسی نمی‌رسه. تو رسیدی. نگهش دار."]];
+const T=i=>i?Math.round(70*Math.pow(i,1.6)/10)*10:0;
+const fa=n=>Number(n).toLocaleString('fa-IR');
+const K=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+const DN=['یکشنبه','دوشنبه','سه‌شنبه','چهارشنبه','پنجشنبه','جمعه','شنبه'];
+const BONUS=10;
+function tasksFor(d){
+ const w=d.getDay();
+ const t=[{id:'wake',i:'🌅',n:'بیدار شدن',g:10,p:5},{id:'brush',i:'🪥',n:'مسواک زدن',g:5,p:5},{id:'am',i:'🏃',n:'تمرین شکم صبح',g:20,p:25,hard:1},{id:'meal',i:'🍳',n:'خوردن وعده اول',g:10,p:5}];
+ if([6,1,3].includes(w))t.push({id:'main',i:'🏋️',n:'رفتن به باشگاه',g:25,p:15});
+ else if([0,2].includes(w))t.push({id:'main',i:'🔥',n:'تمرین سینه',g:25,p:15});
+ return t;
+}
+const now=new Date(),tk=K(now);
+let S={start:tk,done:{},last:'',seen:0};
+try{const s=JSON.parse(localStorage.getItem('rk1')||'null');if(s)S=s}catch(e){}
+const save=()=>{try{localStorage.setItem('rk1',JSON.stringify(S))}catch(e){}};
+function calc(){
+ let xp=0,yLoss=0;const y=new Date(now.getFullYear(),now.getMonth(),now.getDate()-1),yk=K(y);
+ const [a,b,c]=S.start.split('-').map(Number);
+ for(let d=new Date(a,b-1,c);K(d)<=tk;d=new Date(d.getFullYear(),d.getMonth(),d.getDate()+1)){
+  const k=K(d),ts=tasksFor(d),dn=S.done[k]||{};
+  let g=0,loss=0,all=true;
+  ts.forEach(t=>{if(dn[t.id])g+=t.g;else{all=false;loss+=t.p}});
+  if(all)g+=BONUS;
+  if(k<tk){xp=Math.max(0,xp+g-loss);if(k==yk)yLoss=loss}else xp+=g;
+ }
+ return{xp,yLoss};
+}
+function rankOf(xp){let r=0;for(let i=0;i<20;i++)if(xp>=T(i))r=i;return r}
+const $=id=>document.getElementById(id);
+let page=1,cur=0;
+function render(){
+ const {xp,yLoss}=calc();cur=rankOf(xp);const r=R[cur];
+ $('dt').textContent=DN[now.getDay()]+' • '+now.toLocaleDateString('fa-IR');
+ $('mini').textContent=r[0];$('em').textContent=r[0];$('nm').textContent=r[1];
+ $('rk').textContent='رتبه '+fa(cur+1)+' از '+fa(20);
+ const lo=T(cur),hi=cur<19?T(cur+1):lo;
+ $('bf').style.width=(cur<19?Math.min(100,(xp-lo)/(hi-lo)*100):100)+'%';
+ $('xa').textContent=fa(xp)+' امتیاز';
+ $('xb').textContent=cur<19?fa(hi-xp)+' تا '+R[cur+1][0]+' '+R[cur+1][1]:'به قله رسیدی';
+ const ys=new Date(now.getFullYear(),now.getMonth(),now.getDate()-1);
+ $('warn').innerHTML=(S.start<tk&&yLoss>0)?'<div class="warn">دیروز کارهات رو کامل نکردی و <b>'+fa(yLoss)+'</b> امتیاز ازت کم شد. امروز جبران کن.</div>':'';
+ const ts=tasksFor(now),dn=S.done[tk]||{};
+ $('tasks').innerHTML=ts.map(t=>`<div class="t ${dn[t.id]?'on':''} ${t.hard?'hard':''}" data-id="${t.id}"><div class="ic">${t.i}</div><div class="tx"><b>${t.n}</b><span>${dn[t.id]?'انجام شد':'+'+fa(t.g)+' امتیاز  |  نکنی: −'+fa(t.p)}</span></div><div class="ck">✓</div></div>`+(t.id=='am'?'<div id="plan"></div>':'')+(t.id=='main'?'<div id="plan2"></div>':'')).join('')+((ts.length==4)?'<div class="rest">امروز '+DN[now.getDay()]+' است: استراحت. باشگاه شنبه، دوشنبه، چهارشنبه و تمرین سینه یک‌شنبه و سه‌شنبه. تمرین شکم صبح هر روزه. 😴</div>':'');
+ const PLAN=[['سینه',[['شنا الماسی','۵ ست × تا فیلور (حداقل ۱۵)'],['شنا پا بالا (پاها روی صندلی)','۴ × ۲۰'],['شنا آرچر','۴ × ۸ هر طرف'],['شنا با مکث ۳ ثانیه پایین','۴ × ۱۲'],['شنا انفجاری (کف‌زدن)','۴ × ۱۰'],['دیپ بین دو صندلی','۴ × تا فیلور']]],['شکم',[['بالا آوردن پا (Leg Raise)','۵ × ۲۰'],['V-Up','۴ × ۲۰'],['کرانچ دوچرخه','۴ × ۵۰'],['هالو هولد','۴ × ۴۵ ثانیه'],['پلانک','۴ × ۹۰ ثانیه'],['راشن توویست با مکث','۴ × ۴۰']]],['فینیشر',[['۱۰۰ شنا + ۱۰۰ کرانچ','تا تموم نشه تمومی نیست']]]];
+ $('plan').innerHTML=true?'<h2>تمرین شکم صبح (هر روز)</h2><div class="pl">'+PLAN.filter(g=>g[0]=='شکم').map(g=>'<h3>'+g[0]+'</h3>'+g[1].map(e=>'<div class="ex"><span>'+e[0]+'</span><b>'+e[1]+'</b></div>').join('')).join('')+'<div class="pn">استراحت بین ست‌ها: ۴۵ ثانیه. اگه آسون بود، هفته‌ی بعد ۲ تکرار اضافه کن. فرم کامل، بدون تقلب.</div></div>':'';
+ const p2=document.getElementById('plan2');if(p2)p2.innerHTML=[0,2].includes(now.getDay())?'<h2>تمرین امروز: سینه (وزن بدن)</h2><div class="pl"><h3>سینه</h3>'+PLAN[0][1].map(e=>'<div class="ex"><span>'+e[0]+'</span><b>'+e[1]+'</b></div>').join('')+'<h3>فینیشر</h3><div class="ex"><span>۱۰۰ شنا</span><b>تا تموم نشه تمومی نیست</b></div></div>':'';
+ $('bonus').textContent=ts.every(t=>dn[t.id])?'روز کامل! +'+fa(BONUS)+' امتیاز پاداش 🔥':'همه کارها رو بزنی +'+fa(BONUS)+' امتیاز پاداش می‌گیری';
+ return cur;
+}
+$('tasks').addEventListener('click',e=>{
+ const el=e.target.closest('.t');if(!el)return;
+ const id=el.dataset.id;S.done[tk]=S.done[tk]||{};S.done[tk][id]=!S.done[tk][id];save();
+ const before=cur,c=render();
+ if(c>S.seen||c>before){S.seen=c;save();openCert(1,true)}
+ else if(c<S.seen){S.seen=c;save()}
+});
+function confetti(em){
+ for(let i=0;i<44;i++){const s=document.createElement('span');s.className='fl';s.textContent=em;
+  s.style.left=Math.random()*100+'vw';s.style.fontSize=(18+Math.random()*34)+'px';
+  s.style.animationDuration=(2.2+Math.random()*2.6)+'s';s.style.animationDelay=(Math.random()*1.2)+'s';
+  document.body.appendChild(s);setTimeout(()=>s.remove(),7000)}
+}
+function drawCert(){
+ const r=R[cur],{xp}=calc();
+ $('pgb').style.width=page==1?'50%':'100%';
+ $('d1').className=page==1?'a':'';$('d2').className=page==2?'a':'';
+ $('nx').textContent=page==1?'چطور بالا برم؟':'برگشت به گواهی';
+ if(page==1){
+  $('cin').innerHTML=`<div class="av">${r[0]}</div><div class="hr"></div><div class="ct">گواهی رتبه</div>
+  <div class="sub">پس از بررسی عملکردت، این رتبه صادر شد.</div>
+  <div class="stamp">صادر شد ${now.toLocaleDateString('fa-IR')}</div>
+  <div class="big">${r[0]}</div><div class="cn">${r[1]}</div><div class="cr">رتبه ${fa(cur+1)} از ${fa(20)}  |  ${r[2]}</div>
+  <div class="q">«${r[3]}»</div>
+  <div class="ft"><span>صفحه ۱ از ۲</span><span style="font-style:italic">— مربی</span></div>`;
+ }else{
+  $('cin').innerHTML=`<div class="ct">قانون‌های صعود</div>
+  <div class="rules"><h3>امتیاز کارها</h3><ul><li>🌅 بیدار شدن +۱۰ (نکنی −۵)</li><li>🪥 مسواک +۵ (نکنی −۵)</li><li>🏃 تمرین شکم صبح +۲۰ (نکنی <b style="color:#c0392b">−۲۵</b>)</li><li>🍳 وعده اول +۱۰ (نکنی −۵)</li><li>🏋️ باشگاه یا 🔥 سینه +۲۵ (نکنی −۱۵)</li><li>روز کامل: پاداش +۱۰</li></ul>
+  <h3>جریمه</h3><p>آخر هر روز، کارهای نزده جریمه می‌شن و امتیاز کم می‌شه. تمرین صبح سنگین‌ترین جریمه رو داره. اگه امتیازت از حد رتبه پایین‌تر بره، رتبه هم می‌افته.</p>
+  <h3>برنامه هفته</h3><p>باشگاه: شنبه، دوشنبه، چهارشنبه. سینه (وزن بدن): یک‌شنبه و سه‌شنبه. تمرین شکم صبح: هر روز. پنجشنبه و جمعه استراحت.</p>
+  <h3>نردبان (${cur<19?fa(T(cur+1)-xp)+' امتیاز تا رتبه بعد':'تو در قله‌ای'})</h3></div>
+  <div class="lad">${R.map((x,i)=>`<div class="lr ${i==cur?'cur':''} ${i>cur?'lock':''}"><em>${x[0]}</em><div><b>${x[1]}</b>${fa(T(i))}</div></div>`).join('')}</div>
+  <div class="ft"><span>صفحه ۲ از ۲</span><span style="font-style:italic">— مربی</span></div>`;
+ }
+ $('cin').parentElement.scrollTop=0;
+}
+function openCert(p,cf){page=p;drawCert();$('ov').classList.add('show');if(cf)confetti(R[cur][0])}
+$('open').onclick=()=>openCert(1,true);
+$('open2').onclick=()=>openCert(2);
+$('bk').onclick=()=>$('ov').classList.remove('show');
+$('nx').onclick=()=>{page=page==1?2:1;drawCert()};
+render();
+if(S.seen!==cur){const up=cur>S.seen;S.seen=cur;if(up&&S.last){setTimeout(()=>openCert(1,true),400)}}
+S.last=tk;save();
+</script>
+</body>
+</html>
